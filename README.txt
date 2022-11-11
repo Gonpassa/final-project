@@ -8,3 +8,4 @@ Giving set of parameters that user is able to manipulate if he so chooses.
 According to the parameters set, display interactive map of cities that match the parameters. 
 
 Maybe using NUMBEO as the dataset.
+
