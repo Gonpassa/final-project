@@ -25,3 +25,13 @@ db = SQL("sqlite:///WTL.db")
 @app.route("/")
 def index():
     return render_template("index.html")
+
+
+@app.route("/search")
+def search():
+    return render_template("search.html")
+
+
+@app.route("/queries")
+def queries():
+    return render_template("queries.html")
