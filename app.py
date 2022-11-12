@@ -27,11 +27,13 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/search")
+@app.route("/search", methods=["GET", "POST"])
 def search():
+    if request.method == "POST":
+        return redirect("/")
     return render_template("search.html")
 
 
-@app.route("/queries")
+@app.route("/queries", methods=["GET", "POST"])
 def queries():
     return render_template("queries.html")
